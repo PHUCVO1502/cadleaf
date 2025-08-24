@@ -1,0 +1,349 @@
+:root {
+  --black-color: #333;
+  --grey-color: #5e6e89;
+  --heading-color: #0b254b;
+  --hover-color: #007bff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.header-left-logo {
+  width: 126px;
+  height: 34px;
+  object-fit: cover;
+}
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header-center-item {
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 500;
+}
+.header-center-item:hover {
+  color: var(--hover-color);
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-right-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--black-color);
+}
+.header-right-link:hover {
+  color: var(--hover-color);
+}
+.header-right-icon {
+  font-size: 24px;
+  margin-left: 6px;
+}
+.heading-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: var(--heading-color);
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.header-right-info {
+  position: relative;
+}
+.header-right-list {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: none;
+  width: 100px;
+  padding: 10px;
+}
+.header-right-list li {
+  cursor: pointer;
+  padding: 5px 0;
+}
+.header-right-list li:hover {
+  color: var(--hover-color);
+}
+.header-right-info:hover .header-right-list {
+  display: block;
+}
+.header-right-list-link {
+  color: var(--black-color);
+  text-decoration: none;
+}
+.header-right-list-link:hover {
+  color: var(--hover-color);
+}
+.header-right-info::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  z-index: 2;
+}
+.banner-content-text {
+  font-size: 1.25rem;
+  margin-bottom: 4rem;
+}
+.banner-content {
+  text-align: center;
+  color: var(--black-color);
+}
+.banner {
+  background-image: url(/img/bg-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.banner-box {
+  position: relative;
+  width: 730px;
+  height: 349px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffffe5;
+  padding: 0 6rem;
+}
+.banner-content-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #56b280;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  padding: 8px 44px;
+  font-size: 20.65px;
+  cursor: pointer;
+}
+.banner-content-button:hover {
+  background-color: var(--hover-color);
+}
+.banner-content-image {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1.25rem;
+  object-fit: contain;
+}
+.products-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr); /* 4 cột, 1fr: các phần tử bằng nhau */
+  justify-content: center;
+  margin: 24px auto;
+}
+.product-card {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.products-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 48px;
+  line-height: 27.6px;
+  letter-spacing: 0.1px;
+  color: var(--grey-color);
+}
+.product-img {
+  width: 100%;
+  height: auto;
+  background-color: #7b7b7b26;
+}
+.product-name {
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0 4px;
+}
+.product-decs {
+  color: var(--grey-color);
+  font-size: 12px;
+}
+.product-sell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.product-price {
+  color: #56b280;
+  font-size: 20px;
+  font-weight: 500;
+}
+.product-sold {
+  color: #56b280;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 8px 0 12px;
+}
+.product-btn {
+  width: 100%;
+  background-color: #56b280;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.product-btn:hover {
+  background-color: #0056b3;
+}
+.product-content {
+  padding: 0 18px;
+}
+.benefits {
+  height: 800px;
+  margin: 0 auto;
+  width: 100vw;
+  background-color: #f7f8fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.benefits-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+  padding: 16px 8px;
+}
+.benefits-content {
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.benefits-title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 46.6px;
+  color: var(--heading-color);
+}
+.benefits-tiny-text {
+  font-size: 16px;
+  line-height: 22.8px;
+  font-weight: 400;
+  color: #56b280;
+}
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.benefits-list p {
+  font-size: 16px;
+  line-height: 28.8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.benefits-icon {
+  margin-right: 10px;
+}
+.benefits-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #56b280;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  padding: 8px 44px;
+  font-size: 20.65px;
+  cursor: pointer;
+}
+.benefits-button:hover {
+  background-color: var(--hover-color);
+}
+
+/* responsive: code độ phân giải phù hợp với các thiết bị */
+/* PC */
+@media (max-width: 1280px) {
+}
+/* tablet */
+@media (max-width: 1024px) {
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+/* md */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 30px;
+  }
+}
+/* sm */
+@media (max-width: 640px) {
+  .header-center {
+    display: none;
+  }
+  .header-right-info {
+    position: static;
+  }
+  .header-right-list {
+    width: 100vh;
+    height: 50vh;
+    top: 60px;
+    font-size: 30px;
+  }
+  .header-right-list li {
+    padding: 10px 0;
+    margin: 10px 20px;
+  }
+  .header-right-info::before {
+    top: 60px;
+  }
+  .products-list {
+    display: block;
+  }
+  .products-text {
+    margin-bottom: 50px;
+  }
+  .banner {
+    height: 450px;
+  }
+  .banner-box {
+    width: 400px;
+  }
+.banner-box .heading-title {
+  font-size: 30px;
+}
+.banner-content-button {
+  font-size: 15px;
+  padding: 8px 24px;
+}
+/* xs */
+@media (max-width: 475px) {
+}
